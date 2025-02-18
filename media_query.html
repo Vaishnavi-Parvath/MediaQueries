@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color:rgba(255, 127, 229, 0.379);
+            display: flex;
+            justify-content: center;
+            overflow: scroll; 
+
+        }
+
+        .main {
+            width: 100vw;
+            height: 300px;
+            background-image: url(travelMain.jpg);
+            background-position: 30%;
+            background-size: cover;
+            position: sticky;
+            color: rgb(128, 75, 0);
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.111);
+        }
+
+        .frame1 {
+            width: 350px;
+            height: 350px;
+            margin: 20px;
+            background-image: url(london1.jpeg);
+            background-size: cover;
+            color:white; 
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.421);
+        }
+        .frame2 {
+            width: 350px;
+            height: 350px;
+            margin: 20px;
+            background-image: url(rome.avif);
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.422);
+        }
+        .frame3 {
+            width: 350px;
+            height: 350px;
+            margin: 20px;
+            background-image: url(paris.jpeg);
+            background-size: cover;
+            color:white;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+        }
+        .btn{
+            border: none;
+            background-color: rgba(165, 42, 42, 0.596);
+            margin-top: 10px;
+            padding:10px;
+            cursor: pointer;
+        }
+        .inside{
+            color: white;
+            background-color: rgb(11, 77, 184);
+        }
+        @media(max-width:1180px){
+            .container{
+                flex-wrap: wrap;
+            }
+            .main{
+                flex-wrap: wrap;
+            }
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Book an exclusive</h1>
+        <h4>home for your personal travel</h4>
+        <input type="button" value="Explore now" class="btn">
+    </div>
+    <div class="container">
+        <div class="frame1">
+            <h1>London</h1>
+            <h4>London is a historic, cosmopolitan capital city on the River Thames, renowned for its iconic landmarks, vibrant culture, making it a global hub for arts, finance, and tourism. </h4>
+            <input type="button" value="Explore" class="btn inside">
+        </div>
+        <div class="frame2">
+            <h1>Rome</h1>
+            <h4>Rome is the "Eternal City", the capital of Italy, renowned for its ancient history, iconic landmarks;a hub of art, culture, and tourism. </h4>
+            <input type="button" value="Explore" class="btn inside">
+        </div>
+        <div class="frame3">
+            <h1>Paris</h1>
+            <h4>Paris is a romantic, elegant, historic city renowned for its iconic architecture like the Eiffel Tower, charming cafes, and rich art scene, often called the "City of Lights.". </h4>
+            <input type="button" value="Explore" class="btn inside">
+
+        </div>
+    </div>
+</body>
+
+</html>
